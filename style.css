@@ -1,0 +1,289 @@
+#test label{
+    cursor: pointer;
+}
+
+#test input{
+    display: none;
+    margin: 0px;
+}
+
+#test { 
+    background-color: lightpink;
+    border-radius:10px;
+}
+
+#test input+label{
+    opacity: 0;
+}
+
+#test input:checked+label{
+    opacity: 1;
+    background-color: lightblue;
+    border-radius:10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+body {
+    background-color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: black;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.grey-bg {
+    background-color: #dcd6d9;
+}
+/* トップへ戻るボタン */
+.page_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: rgba(216, 132, 255, 0.8);
+    color: #fff;
+    transition: 0.3s0;
+    border-radius:10px;
+}
+
+  /* マウスオーバー時 */
+.page_top_btn:hover {
+    background: rgba(216, 132, 255, 0.8);
+    color: rgb(255, 255, 255, 0.8);
+    border-radius:10px;
+}
+/* CSSコード */
+html{
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+#test label {
+    cursor: pointer;
+}
+
+#test input {
+    display: none;
+    margin: 0px;
+}
+
+#test { 
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+#test input + label {
+    opacity: 0;
+}
+
+#test input:checked + label {
+    opacity: 1;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+body {
+    background-color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: black;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.grey-bg {
+    background-color: #dcd6d9;
+}
+
+/* トップへ戻るボタン */
+.page_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: rgba(216, 132, 255, 0.8);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* マウスオーバー時 */
+.page_top_btn:hover {
+    background: rgba(216, 132, 255, 0.8);
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr#underline td:first-child {
+    text-decoration: underline;
+}
+
+tr#tl {
+    background-color: #dcd6d9;
+}
+
+.photo2 {
+    text-align: center;
+}
+
+.text1 {
+    text-align: left;
+}
+
+.container {
+    margin-bottom: 10px;
+}
+
+.gray-out {
+    color: gray;
+}
+
+.explanation {
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    display: none;
+}
+
+
+/* スマートフォン縦 (0-480px) */
+@media only screen and (max-width: 480px) {
+    body{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .photo1{
+        width: 200px;
+        height: 160px;
+        
+    }
+
+    .photo4{
+        width: 200px;
+        height: 100px;
+    }
+
+    .photo3{
+        width: 200px;
+        height: 150px;
+    }
+    .photo5{
+        width: 272px;
+        height: 86px;
+    }
+    .suushiki{
+        font-size: 10px;
+    }
+}
+
+/* スマートフォン横 (480-670px) */
+@media only screen and (min-width: 481px) and (max-width: 670px) {
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/* タブレット (670-960px) */
+@media only screen and (min-width: 671px) and (max-width: 960px){
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
+    }
+    }
+
+/* ノートPC (960-1280px) */
+@media only screen and (min-width: 961px) and (max-width: 1280px){
+    body{
+        padding-left: 20%;
+        padding-right: 15%;
+    }
+
+    .explanation {
+        margin-right: 30%;
+        margin-left: 9%;
+    }
+
+    .photo1{
+        width: 750px;
+        height: 600px;
+    }
+
+    .photo4 {
+        width: 400px;
+        height: 200px;
+    }
+
+    .photo3{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+/* モニター等 (1280px以上) */
+@media only screen and (min-width: 1281px){
+    body{
+        padding-left: 20%;
+        padding-right: 15%;
+    }
+    .photo1{
+        width: 800px;
+        height: 640px;
+    }
+}

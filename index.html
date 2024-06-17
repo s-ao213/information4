@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>前期期末テスト 情報対策</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['\\(','\\)']] // インライン数式のデリミタを設定
+                },
+                svg: {
+                    fontCache: 'global'
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <form name="myTest">
+            <u>
+                <div id="page_top"></div>
+                <h1>前期期末テスト <br>情報3対策サイト</h1>
+            </u>
+            <p>最終更新日:<time id="modify"></time></p>
+            <br>
+            <input type="button" value="全て隠す" onclick="checkCLEAR()">
+            <input type="button" value="全て表示" onclick="checkALL()">
+            <button onclick="resetAll()">リセット</button>
+
+            <a href="#page_top" class="page_top_btn">トップへ戻る</a>
+            <p>推奨ブラウザ:chrome・Yahoo!・safari</p>
+        
+            <br>
+        
+            <li>以下のリンクをクリックすると問題のページまで飛びます。</li>
+            <li>Iコースの学生複数名で確認を行っていますが，間違いがあれば教えて下さい。</li>
+            <p>過去の問題はこちら↓↓↓↓↓</p>
+            <p>※別サイトへ移動します。</p>
+            <a href="https://s-ao213.github.io/information2/question1.html">2023前期中間の問題</a>
+            <br>
+            <a href="https://s-ao213.github.io/information/question.html">2023前期末の問題</a>
+            <br>
+            <a href="https://s-ao213.github.io/information3/index.html">2024前期期中間の問題</a>
+
+            <u>
+                <h3 id="index">目次</h3>
+            </u>
+            
+            <u>
+                <h4>講義ノート一覧</h4>
+            </u>
+            <ul>
+                <p style="color: red;">※講義ノート第8回は前期中間試験のため省略</p>
+                <li><a href="#note1">講義ノート第9回</a></li>
+            <!-- <li><a href="#note">講義ノート第回</a></li> -->
+            </ul>
+
+            <!-- <section>
+                <u>
+                    <h2 id="note">講義ノート第回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+            </section> -->
+<!-- 
+            <div class="container" id="container">
+                <input type="checkbox" onclick="grayOutContainer('container')">
+                <p><span id="test"><input type="checkbox" id="blank"><label for="blank">　　</label></span></p>
+                <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                <div class="explanation" id="explanation">
+                    <p></p>
+                </div>
+                <br>
+            </div> -->
+
+            <section>
+                <u>
+                    <h2 id="note1">講義ノート第9回</h2>
+                    <p><a href="#index">目次に戻る</a></p>
+                </u>
+            
+                <div class="container" id="container0">
+                    <input type="checkbox" onclick="grayOutContainer('container0')"> 次のデータは、名義尺度／順序尺度／間隔尺度／比例尺度のどれに分類するのが最も適切か答えよ。
+                    <p>① 顧客満足度（非常に不満、不満、普通、満足、非常に満足）</p>
+                    <p>② 最終学歴（高校、高専・短大・専門学校、大学、大学院（修士）、大学院（博士））</p>
+                    <p>③ 国籍（日本、英国、米国、カナダ、フランス、ドイツ、イタリア・・・）</p>
+                    <p>④ 時刻 </p>
+                    <p>⑤ 年収 </p>
+                    <p>①<span id="test"><input type="checkbox" id="blank0"><label for="blank0">　順序尺度　</label></span></p>
+                    <p>②<span id="test"><input type="checkbox" id="blank1"><label for="blank1">　順序尺度　</label></span></p>
+                    <p>③<span id="test"><input type="checkbox" id="blank2"><label for="blank2">　名義尺度　</label></span></p>
+                    <p>④<span id="test"><input type="checkbox" id="blank3"><label for="blank3">　間隔尺度　</label></span></p>
+                    <p>⑤<span id="test"><input type="checkbox" id="blank4"><label for="blank4">　比例尺度　</label></span></p>
+                    
+                    <button onclick="toggleExplanation(event, 'explanation0')">解説を見る</button>
+                    <div class="explanation" id="explanation0">
+                        <br>
+                        <p>③は午前 2 時は午前 1 時の 2 倍という意味を持たないため間隔尺度です．</p>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            
+                <div class="container" id="container1">
+                    <input type="checkbox" onclick="grayOutContainer('container1')"> パーセンタイル（Percentile）に相当する語を漢字 4 文字で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　百分位数　</label></span></p>
+                    <br>
+                </div>
+            
+                <div class="container" id="container2">
+                    <input type="checkbox" onclick="grayOutContainer('container2')">「中位数」と同じ意味を持つ語をすべて答えよ。
+                    <p>① 平均値 ② 最頻値 </p>
+                    <p>③ 中央値 ④ 50 パーセンタイル </p>
+                    <p>⑤ 第 2 四分位数 ⑥ 期待値</p>
+                    <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　③　④　⑤　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation1')">解説を見る</button>
+                    <div class="explanation" id="explanation1">
+                        <br>
+                        <p>これは解説です</p>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+
+                
+                <div class="container" id="container3">
+                    <input type="checkbox" onclick="grayOutContainer('container3')">心理学者ジョージ・A・ミラーは「人間の短期記憶の容量には限界があり、一度に保持できる情報の単位（チャンク）の数は約（ ）個である」と主張している。括弧にあてはまる数値を〇〇±〇の形式で答えよ。〇の数と正答の桁数は関係ない。
+                    <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　7±2　</label></span></p>
+                    <br>
+                </div>
+
+                <div class="container" id="container4">
+                    <input type="checkbox" onclick="grayOutContainer('container4')">「平均」を意味する 2 つの英単語を答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average　Mean　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation2')">解説を見る</button>
+                    <div class="explanation" id="explanation2">
+                        <br>
+                        <p>英語で「平均」は Mean と表現されます。Average も同様に「平均」を意味しますが、Average は Mean よりも広義で「中央値」や「最頻値」なども含めた意味で使われることがあります。</p>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container5">n個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                    <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　\(\frac{1}{n} \sum_{i=1}^{n} x_i\)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation3')">解説を見る</button>
+                    <div class="explanation" id="explanation3">
+                        <p> <br>
+                            \( n \) 件のデータ \((x_1, x_2, \ldots, x_n)\) の算術平均を求めるためには、まず全てのデータの総和を求め、その総和をデータの件数 \( n \) で割ります。
+                            <br>
+                            これを数式で表すと、以下のようになります.
+                            <br>
+                            \[
+                            \text{算術平均} = \frac{1}{n} \sum_{i=1}^{n} x_i
+                            \]
+                            <br>
+                            ここで、
+                            <ul>
+                                <li>\( \sum \) はシグマ記号で、総和を表します。</li>
+                                <li>\( i \) は総和のインデックスで、各データの番号を示します。</li>
+                                <li>\( x_i \) は \( i \) 番目のデータを表します。</li>
+                                <li>\( n \) はデータの総数を表します。</li>
+                            </ul>
+                            <br>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container6">
+                    <input type="checkbox" onclick="grayOutContainer('container6')">次の各分析について、常に正しいと言えるものは「〇」、常に正しいとは言えないものについては「×」を答えよ。
+                    <p>分析①：40 名のクラスで試験を実施したところ、平均点が 49 点であった。いま、点数区分を「0 から19 点」「20 から 39 点」「40 から 59 点」「60 から 79 点」「80 から 100 点」に区切るとすれば、「40 から 59 点」に属する学生が最も多い。</p>
+                    <p>分析②：40 名のクラスで試験が実施され、自分の成績は 65 点、クラスの平均点は 62 点であった。よって、自分は（成績順位において）上位半分に含まれるといえる。×</p>
+                    <p>分析③：情報 3 の中間試験の成績が 65 点（クラス平均 50 点）であった。その後、情報 3 の前期末試験の成績が 75 点（クラス平均 40 点）であった。これより、情報 3 の成績順位は、中間試験のときよりも、前期末試験のほうが向上しているはずだ。</p>
+                    <p>分析④：中学 1 年生の学年末の 9 科目平均が 79 点であった。そして、2 年生の学年末の 9 科目平均は 86点であった。これより、少なくとも 1 年次よりも 2 年次のほうが学年順位があがっているはずだ。</p>
+                    <p>分析⑤：A 君の 9 科目平均は 65 点であった。また、B 君の 9 科目平均は 70 点であった。これより、B君は、A 君よりも点数が高かった科目数が多いはずだ。</p>
+                    <p>分析⑥：40 名のクラスで試験を実施したところ、平均が 62 点であった。クラス全員の試験点数を合計すると 2480 点となるはずだ。</p>
+                    <p>分析⑦：10 人の高血圧患者に対して、血圧を下げる新薬 X を投与したところ、10 名についての最高血圧を平均した値が 181 から 182 になった。これより、新薬 X には最高血圧を下げる効果は期待できないといえる。</p>
+                    <p>分析⑧：高専 3 年生の成績はクラス 2 位であった。また、高専 4 年生の成績はクラス 3 位であった。よって、3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性はない。（3 年と 4 年でクラスのメンバーは同じものとする）×</p>
+                    <p>分析①<span id="test"><input type="checkbox" id="blank10"><label for="blank10">　×　</label></span></p>
+                    <p>分析②<span id="test"><input type="checkbox" id="blank19"><label for="blank19">　×　</label></span></p>
+                    <p>分析③<span id="test"><input type="checkbox" id="blank20"><label for="blank20">　×　</label></span></p>
+                    <p>分析④<span id="test"><input type="checkbox" id="blank21"><label for="blank21">　×　</label></span></p>
+                    <p>分析⑤<span id="test"><input type="checkbox" id="blank22"><label for="blank22">　×　</label></span></p>
+                    <p>分析⑥<span id="test"><input type="checkbox" id="blank23"><label for="blank23">　○　</label></span></p>
+                    <p>分析⑦<span id="test"><input type="checkbox" id="blank24"><label for="blank24">　×　</label></span></p>
+                    <p>分析⑧<span id="test"><input type="checkbox" id="blank25"><label for="blank25">　×　</label></span></p>
+                    
+                    <button onclick="toggleExplanation(event, 'explanation4')">解説を見る</button>
+                    <div class="explanation" id="explanation4">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container7">
+                    <input type="checkbox" onclick="grayOutContainer(Container7)">n個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について調和平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                    <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　\( \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}} \)　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation5')">解説を見る</button>
+                    <div class="explanation" id="explanation5">
+                        <p> <br>
+                            \( n \) 件のデータ \((x_1, x_2, \ldots, x_n)\) の調和平均を求めるためには、まず各データの逆数の総和を求め、その総和をデータの件数 \( n \) で割ります。
+                            <br>
+                            これを数式で表すと、以下のようになります.
+                            <br>
+                            \[
+                            \text{調和平均} = \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}}
+                            \]
+                            <br>
+                            ここで、
+                            <ul>
+                                <li>\( \sum \) はシグマ記号で、総和を表します。</li>
+                                <li>\( i \) は総和のインデックスで、各データの番号を示します。</li>
+                                <li>\( x_i \) は \( i \) 番目のデータを表します。</li>
+                                <li>\( n \) はデータの総数を表します。</li>
+                            </ul>
+                            <br>
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container8">
+                    <input type="checkbox" onclick="grayOutContainer('container8')">
+                    <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container9">
+                    <input type="checkbox" onclick="grayOutContainer('container9')">
+                    <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container10">
+                    <input type="checkbox" onclick="grayOutContainer('container10')">
+                    <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container11">
+                    <input type="checkbox" onclick="grayOutContainer('container11')">
+                    <p><span id="test"><input type="checkbox" id="blank15"><label for="blank15">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container12">
+                    <input type="checkbox" onclick="grayOutContainer('container12')">
+                    <p><span id="test"><input type="checkbox" id="blank16"><label for="blank16">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container13">
+                    <input type="checkbox" onclick="grayOutContainer('container13')">
+                    <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container14">
+                    <input type="checkbox" onclick="grayOutContainer('container14')">
+                    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="container" id="container15">
+                    <input type="checkbox" onclick="grayOutContainer('container15')">
+                    <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
+                    <div class="explanation" id="explanation">
+                        <p></p>
+                    </div>
+                    <br>
+                </div>
+
+
+            </section>
+            
+            
+        </form>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
