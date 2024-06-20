@@ -94,6 +94,10 @@ tr#tl {
     display: none;
 }
 
+.photo3{
+    width: 100%;
+    height: 100%;
+}
 
 /* スマートフォン縦 (0-480px) */
 @media only screen and (max-width: 480px) {
@@ -101,8 +105,16 @@ tr#tl {
         padding-left: 5%;
         padding-right: 5%;
     }
-    .suushiki{
-        font-size: 10px;
+
+    .photo2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .photo1 {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -112,6 +124,12 @@ tr#tl {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    
+    .photo1 {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* タブレット (670-960px) */
@@ -119,6 +137,11 @@ tr#tl {
     body{
         padding-left: 15%;
         padding-right: 15%;
+    }
+
+    .photo1 {
+        width: 90%;
+        height: 90%;
     }
     }
 
@@ -133,6 +156,11 @@ tr#tl {
         margin-right: 30%;
         margin-left: 9%;
     }
+
+    .photo2 {
+        width: 85%;
+        height: 85%;
+    }
 }
 
 /* モニター等 (1280px以上) */
@@ -142,4 +170,9 @@ tr#tl {
         padding-right: 15%;
     }
 
+    
+    .photo1 {
+        width: 100%;
+        height: 100%;
+    }
 }
