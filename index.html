@@ -37,12 +37,20 @@
             <input type="button" value="全て隠す" onclick="checkCLEAR()">
             <input type="button" value="全て表示" onclick="checkALL()">
             <button onclick="resetAll()">リセット</button>
-
+            
             <a href="#page_top" class="page_top_btn">トップへ戻る</a>
             <p>推奨ブラウザ:chrome・Yahoo!・safari</p>
         
             <br>
-        
+            <h4>操作説明</h4>
+            <p>
+                <ul>
+                    <li>全て隠す：回答を全て非表示にします。</li>
+                    <li>全て表示：回答をすべて表示します。</li>
+                    <li>リセット：すべての表示をリセットできます。</li>
+                    <li>問題横のチェックボックスをクリックすると問題が半透明になります。</li>
+                </ul>
+            </p>
             <li>以下のリンクをクリックすると問題のページまで飛びます。</li>
             <li>Iコースの学生複数名で確認を行っていますが，間違いがあれば教えて下さい。</li>
             <p>過去の問題はこちら↓↓↓↓↓</p>
@@ -104,9 +112,7 @@
                     
                     <button onclick="toggleExplanation(event, 'explanation0')">解説を見る</button>
                     <div class="explanation" id="explanation0">
-                        <br>
                         <p>③は午前 2 時は午前 1 時の 2 倍という意味を持たないため間隔尺度です．</p>
-                        <br>
                     </div>
                     <br>
                 </div>
@@ -125,7 +131,6 @@
                     <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　③　④　⑤　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation1')">解説を見る</button>
                     <div class="explanation" id="explanation1">
-                        <br>
                         <p>各言葉の意味の説明</p>
                         <ul>
                             <li>① 平均値: 全データの合計をデータの個数で割った値。</li>
@@ -135,7 +140,6 @@
                             <li>⑤ 第 2 四分位数: データを 4 等分したときの 2 番目の区切りの値で、中央値と同じ。</li>
                             <li>⑥ 期待値: 確率論における平均値で、各値にその確率を掛けた総和。</li>
                         </ul>
-                        <br>
                     </div>
                     <br>
                 </div>
@@ -152,14 +156,13 @@
                     <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average　Mean　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation2')">解説を見る</button>
                     <div class="explanation" id="explanation2">
-                        <br>
                         <p>英語で「平均」は Mean と表現されます。Average も同様に「平均」を意味しますが、Average は Mean よりも広義で「中央値」や「最頻値」なども含めた意味で使われることがあります。</p>
-                        <br>
                     </div>
                     <br>
                 </div>
 
-                <div class="container" id="container5">\(n\) 個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                <div class="container" id="container5">
+                    <input type="checkbox" onclick="grayOutContainer('container5')">\(n\) 個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
                     <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　\(\frac{1}{n} \sum_{i=1}^{n} x_i\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation3')">解説を見る</button>
                     <div class="explanation" id="explanation3">
@@ -222,9 +225,7 @@
                     <p>分析⑤<span id="test"><input type="checkbox" id="blank22"><label for="blank22">　×　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation16')">解説を見る</button>
                     <div class="explanation" id="explanation16">
-                        <br>
                         <img class="photo2" src="分析５解説.png" alt="分析の表">
-                        <br>
                     </div>
                     <br>
 
@@ -239,7 +240,6 @@
                             <br>
                             以下のように 10 人中 8 人は最高血圧が下がっているというケースも考えられる。</p>
                         <img class="photo2" src="分析7解説.png" alt="分析の表">
-                        <br>
                     </div>
                     <br>
 
@@ -247,8 +247,7 @@
                     <p>分析⑧<span id="test"><input type="checkbox" id="blank25"><label for="blank25">　×　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation4')">解説を見る</button>
                     <div class="explanation" id="explanation4">
-                        <p>×（常に正しいとは言えない）。3 年で 1 位だった学生が 4 年で 40 位、3 年で 39 位と 40 位だった学生が、1 位と 2 位になった場合、この学生が 3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性がある。
-                            </p>
+                        <p>×（常に正しいとは言えない）。3 年で 1 位だった学生が 4 年で 40 位、3 年で 39 位と 40 位だった学生が、1 位と 2 位になった場合、この学生が 3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性がある。</p>
                     </div>
                     <br>
                 </div>
@@ -274,7 +273,6 @@
                                 <li>\( x_i \) は \( i \) 番目のデータを表します。</li>
                                 <li>\( n \) はデータの総数を表します。</li>
                             </ul>
-                            <br>
                         </p>
                     </div>
                     <br>
@@ -285,7 +283,6 @@
                     <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　\(\frac{50 + 55 + 60 + 30 + 45}{5} = 48 \, \text{部/時間}\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation6')">解説を見る</button>
                     <div class="explanation" id="explanation6">
-                        <br>
                         <p>A君が平日に配達した新聞の平均配達速度を求めるためには、まず5日間の配達速度を合計し、その合計を5で割ります。</p>
                         <p>具体的には、以下の計算式を用います</p>
                         <p>
@@ -312,7 +309,6 @@
                     <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　-4.2% 　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation7')">解説を見る</button>
                     <div class="explanation" id="explanation7">
-                        <br>
                         <p>公大製作所の「平均売上成長率」を幾何平均によって求める方法を解説します。</p>
                         <p>売上の成長率をパーセンテージから小数に変換して計算します。</p>
                         <ul>
@@ -347,10 +343,8 @@
                     <button onclick="toggleExplanation(event, 'explanation8')">解説を見る</button>
 
                     <div class="explanation" id="explanation8">
-                        <br>
                         <p>この箱ひげ図では、各四分位点や最大値・最小値が示されています。各順位の点数は以下のように推定できます。</p>
                         <p>1位: 87点 (最大値に近い点数) <br> 10位: 約76点 (第3四分位数に近い点数) <br> 20位: 約67点 (中央値付近の点数) <br> 30位: 約63点 (第1四分位数に近い点数) <br> 40位: 46点 (最小値に近い点数)</p>
-                        <br>
                     </div>
                     <br>
 
@@ -359,9 +353,7 @@
                     <button onclick="toggleExplanation(event, 'explanation17')">解説を見る</button>
 
                     <div class="explanation" id="explanation17">
-                        <br>
                         <p>箱ひげ図から見ると、第2四分位数(Q2)は中央値であり、約67点です。この点数は上位20位の境界に近い点数です。したがって、平均点（中央値以上の点数）が上位20位以内に入っていると解釈するのは適切です。</p>
-                        <br>
                     </div>
                     <br>
 
@@ -370,9 +362,7 @@
                     <button onclick="toggleExplanation(event, 'explanation18')">解説を見る</button>
 
                     <div class="explanation" id="explanation18">
-                        <br>
                         <p>箱ひげ図によると、第1四分位数(Q1)は約63点、第3四分位数(Q3)は約76点です。この範囲には全体の50%のデータが含まれていますが、クラスの人数が40人であるため、20名がこの範囲に含まれます。したがって、約10名が63～76点の範囲にいるという解釈は不適切です。</p>
-                        <br>
                     </div>
                     <br>
 
@@ -381,9 +371,7 @@
                     <button onclick="toggleExplanation(event, 'explanation19')">解説を見る</button>
 
                     <div class="explanation" id="explanation19">
-                        <br>
                         <p>箱ひげ図から見ると、平均値は中央値である第2四分位数(Q2)よりも低い位置にあることが示されています。したがって、「平均値＜第 2 四分位数である」という主張は正しいです。</p>
-                        <br>
                     </div>
                     <br>
 
@@ -391,9 +379,7 @@
                     <p><span id="test"><input type="checkbox" id="blank29"><label for="blank29">　(5) 正しい　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation20')">解説を見る</button>
                     <div class="explanation" id="explanation20">
-                        <br>
                         <p>点数が72点の学生は、第1四分位数(Q1)と第3四分位数(Q3)の間に位置しており、この範囲は全体の50%のデータが含まれます。したがって、点数が72点の学生が上位11位から20位の範囲に位置すると解釈するのは正しいです。</p>
-                        <br>
                     </div>
                     <br>
                 </div>
@@ -404,7 +390,6 @@
                     <p>②<span id="test"><input type="checkbox" id="blank33"><label for="blank33">　② \(Q3 + 1.5 \times (Q3 - Q1)\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation9')">解説を見る</button>
                     <div class="explanation" id="explanation9">
-                        <br>
                         <p>箱ひげ図の「ひげ」の下限と上限を求めるための式は以下の通りです</p>
                         <ul>
                             <li>① 「ひげ」の下限: \(Q1 - 1.5 \times (Q3 - Q1)\)</li>
@@ -417,8 +402,8 @@
                             <li>\(Q3\): 第3四分位（データの上位25%点）</li>
                         </ul>
                         <p>「ひげ」の下限および上限は、データの範囲を示すものであり、それを超えるデータ点は「外れ値」として別途プロットされます。</p>                    </div>
-                    <br>
                 </div>
+                <br>
 
                 <div class="container" id="container12">
                     <input type="checkbox" onclick="grayOutContainer('container12')">箱ひげ図では（ ① ）から（ ② ）の範囲を四分位範囲といい、その範囲にはデータの（ ③ ）%が含まれることになる。括弧にあてはまる語や数値を答えよ。なお、第 1 四分位を Q1、第2 四分位を Q2、第 3 四分位を Q3 として、①と②は Q1、Q2、Q3 のいずれかを答えること。
@@ -427,7 +412,6 @@
                     <p>③<span id="test"><input type="checkbox" id="blank35"><label for="blank35">　③ 50　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation10')">解説を見る</button>
                     <div class="explanation" id="explanation10">
-                        <br>
                         <p>箱ひげ図における四分位範囲（IQR）は、次のように定義されます．</p>
                         <ul>
                             <li>① \(Q1\) から ② \(Q3\) の範囲を四分位範囲（Interquartile Range, IQR）といいます。</li>
@@ -451,45 +435,35 @@
                     <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　最高得点: 95点, 最低得点: 60点　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation21')">解説を見る</button>
                     <div class="explanation" id="explanation21">
-                        <br>
                         <p>最高得点は箱ひげ図の右端、最低得点は左端を確認してください。</p>
-                        <br>
                     </div>
 
                     <p>(2) 平均点は何点か答えよ（小数点以下第１位まで答えること）</p>
                     <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　平均点: 80.0点　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation22')">解説を見る</button>
                     <div class="explanation" id="explanation22">
-                        <br>
                         <p>平均点は、ダイヤモンドマークで示されています。図から読み取ると約80.0点です。</p>
-                    <br>
                     </div>
 
                     <p>(3) 中央値は約何点か答えよ（小数点以下第１位まで答えること）。</p>
                     <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　中央値: 80.0点　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation23')">解説を見る</button>
                     <div class="explanation" id="explanation23">
-                        <br>
                         <p>中央値は箱ひげ図の箱の中央の線で示されます。図から読み取ると約80.0点です。</p>
-                        <br>
                     </div>
 
                     <p>(4) クラスの上位 10 番以内に位置するためには、およそ何点以上をとっている必要があるか。</p>
                     <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　約85点以上　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation24')">解説を見る</button>
                     <div class="explanation" id="explanation24">
-                        <br>
                         <p>上位10番以内に位置するためには、上位25%に位置する必要があります。箱ひげ図の右側四分位点を確認してください。</p>
-                        <br>
                     </div>
 
                     <p>(5) クラスの上位 21 番から 30 番は、およそ何点から何点の点数範囲に属しているか。</p>
                     <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　約70点から75点　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation25')">解説を見る</button>
                     <div class="explanation" id="explanation25">
-                        <br>
                         <p>上位21番から30番の範囲は、箱ひげ図の下側四分位点（第1四分位点）と中央値の間の値です。これらを箱ひげ図で確認してください。</p>
-                        <br>
                     </div>
                     <br>
                 </div>
@@ -499,11 +473,9 @@
                     <p><span id="test"><input type="checkbox" id="blank36"><label for="blank36">　大きく　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation26')">解説を見る</button>
                     <div class="explanation" id="explanation26">
-                        <br>
                         <p>一般に、大きな値の外れ値が存在すると、平均値が中央値よりも大きくなる傾向があります。</p>
                         <p>理由は、平均値（算術平均）はデータの総和をデータの個数で割った値であり、全てのデータ点に影響を受けます。したがって、極端に大きな値の外れ値が存在すると、その値が平均値を引き上げます。</p>
                         <p>一方、中央値はデータを小さい順に並べたときの中央の値であり、外れ値の影響を受けにくい指標です。そのため、大きな外れ値がある場合、平均値は中央値よりも大きくなりがちです。</p>                    </div>
-                        <br>
                 </div>
 
             </section>

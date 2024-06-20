@@ -92,6 +92,10 @@ tr#tl {
     background-color: #e6e6fa;
     border-radius: 10px;
     display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .photo3{
