@@ -44,7 +44,7 @@ table {
     text-align: center;
     background: rgba(216, 132, 255, 0.8);
     color: #fff;
-    transition: 0.3s0;
+    transition: 0.3s;
     border-radius:10px;
 }
 
