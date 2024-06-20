@@ -1,3 +1,9 @@
+.ibm-plex-sans-jp-regular {
+    font-family: "IBM Plex Sans JP", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
 #test label{
     cursor: pointer;
 }
