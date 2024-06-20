@@ -119,6 +119,7 @@
                 </div>
             
                 <div class="container" id="container1">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container1')"> パーセンタイル（Percentile）に相当する語を漢字 4 文字で答えよ。
                     <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　百分位数　</label></span></p>
                     <br>
@@ -134,11 +135,12 @@
                     <div class="explanation" id="explanation1">
                         <p>各言葉の意味の説明</p>
                         <ul>
+                            <li>中位値: 代表値の一つで、複数のデータを値の大きさの順に並べたとき、中央にくるデータの値のこと。対象となるデータ数が偶数の場合は、中央にある二つ値の平均値となる。</li>
                             <li>① 平均値: 全データの合計をデータの個数で割った値。</li>
                             <li>② 最頻値: 最も頻繁に出現する値。</li>
                             <li>③ 中央値: データを昇順または降順に並べたとき、中央に位置する値。</li>
                             <li>④ 50 パーセンタイル: 全データの 50% がこの値以下であることを示す値。</li>
-                            <li>⑤ 第 2 四分位数: データを 4 等分したときの 2 番目の区切りの値で、中央値と同じ。</li>
+                            <li>⑤ 第 2 四分位数: データを 4 等分したときの 2 番目の区切りの値で、中央値と同じです。</li>
                             <li>⑥ 期待値: 確率論における平均値で、各値にその確率を掛けた総和。</li>
                         </ul>
                     </div>
@@ -147,12 +149,14 @@
 
                 
                 <div class="container" id="container3">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container3')">心理学者ジョージ・A・ミラーは「人間の短期記憶の容量には限界があり、一度に保持できる情報の単位（チャンク）の数は約（ ）個である」と主張している。括弧にあてはまる数値を〇〇±〇の形式で答えよ。〇の数と正答の桁数は関係ない。
                     <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　7±2　</label></span></p>
                     <br>
                 </div>
 
                 <div class="container" id="container4">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container4')">「平均」を意味する 2 つの英単語を答えよ。
                     <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average　Mean　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation2')">解説を見る</button>
@@ -163,6 +167,7 @@
                 </div>
 
                 <div class="container" id="container5">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container5')">\(n\) 個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
                     <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　\(\frac{1}{n} \sum_{i=1}^{n} x_i\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation3')">解説を見る</button>
@@ -190,6 +195,7 @@
                 </div>
 
                 <div class="container" id="container6">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container6')">次の各分析について、常に正しいと言えるものは「〇」、常に正しいとは言えないものについては「×」を答えよ。
                     <p>分析①：40 名のクラスで試験を実施したところ、平均点が 49 点であった。いま、点数区分を「0 から19 点」「20 から 39 点」「40 から 59 点」「60 から 79 点」「80 から 100 点」に区切るとすれば、「40 から 59 点」に属する学生が最も多い。</p>
                     <p>分析①<span id="test"><input type="checkbox" id="blank10"><label for="blank10">　×　</label></span></p>
@@ -254,6 +260,7 @@
                 </div>
 
                 <div class="container" id="container7">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer(Container7)">20個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について調和平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
                     <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　\( \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}} \)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation5')">解説を見る</button>
@@ -280,6 +287,7 @@
                 </div>
 
                 <div class="container" id="container8">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container8')">A 君は平日に新聞配達のバイトをしている。担当の配達先は 100 件となっている。今週の月曜は 50 部/時間、火曜は 55 部/時間、水曜は 60 部/時間、木曜は 30 部/時間（大雨だった）、金曜は 45 部/時間で配達ができた。5 日間での平均配達速度（部/時間）を求めるための式を答えよ。
                     <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　\(\frac{50 + 55 + 60 + 30 + 45}{5} = 48 \, \text{部/時間}\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation6')">解説を見る</button>
@@ -305,7 +313,8 @@
                 </div>
 
                 <div class="container" id="container9">
-                    <input type="checkbox" onclick="grayOutContainer('container9')">公大製作所の人事部長は、会社説明会で就活生に向けて次のような話をした。2020 年から2022 年にかけての公大製作所の「平均売上成長率」を幾何平均によって求めよ 。
+                    <br>
+                    <input type="checkbox" onclick="grayOutContainer('container9')">公大製作所の人事部長は、会社説明会で就活生に向けて次のような話をした。2020 年から2022 年にかけての公大製作所の「平均売上成長率」を幾何平均によって求めよ。
                     <p>我が公大製作所は、新型コロナウイルスの影響で 2020 年度には売上が前年比 40%になるという非常に大きな危機に直面しました。しかし、社員一同の懸命な努力の結果、2021 年度の売上は前年比 110%、そして 2022 年度には前年比 200%という飛躍的な回復と成長を遂げました。厳しい時期ではありましたが、平均してみれば (40 + 110 + 200) / 3 ≒ 116、つまり、年間平均 16%ずつの売上成長が見られました。この結果は、まさに「困難を乗り越えて強くなる」という言葉通りです。</p>
                     <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　-4.2% 　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation7')">解説を見る</button>
@@ -336,6 +345,7 @@
                 </div>
 
                 <div class="container" id="container10">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container10')">次に示しす 40 人クラスの「国語」の得点分布を示した箱ひげ図について、次の各問いに答えよ。なお、小テストや試験で出題する際には、図内に Min、Max、Q1、Q2、Q3 の表記はしていないので注意すること。
                     <img class="photo3" src="国語の箱ひげ図.png" alt="箱ひげ図">
                     
@@ -386,6 +396,7 @@
                 </div>
 
                 <div class="container" id="container11">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container11')">箱ひげ図では（ ① ）を「ひげ」の下限、（ ② ）を「ひげ」の上限として、それに収まらない値を「外れ値」として別途プロットする。括弧にあてはまる式を答えよ。なお、第 1 四分位を Q1、第 2 四分位を Q2、第 3 四分位を Q3 として、Q1～Q3 を使った式で答えること。
                     <p>①<span id="test"><input type="checkbox" id="blank15"><label for="blank15">　① \(Q1 - 1.5 \times (Q3 - Q1)\) 　</label></span></p>
                     <p>②<span id="test"><input type="checkbox" id="blank33"><label for="blank33">　② \(Q3 + 1.5 \times (Q3 - Q1)\)　</label></span></p>
@@ -407,6 +418,7 @@
                 <br>
 
                 <div class="container" id="container12">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container12')">箱ひげ図では（ ① ）から（ ② ）の範囲を四分位範囲といい、その範囲にはデータの（ ③ ）%が含まれることになる。括弧にあてはまる語や数値を答えよ。なお、第 1 四分位を Q1、第2 四分位を Q2、第 3 四分位を Q3 として、①と②は Q1、Q2、Q3 のいずれかを答えること。
                     <p>①<span id="test"><input type="checkbox" id="blank16"><label for="blank16">　① \(Q1\)　</label></span></p>
                     <p>②<span id="test"><input type="checkbox" id="blank34"><label for="blank34">　② \(Q3\)　</label></span></p>
@@ -429,6 +441,7 @@
                 </div>
 
                 <div class="container" id="container13">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container13')">次に示す箱ひげ図は、40 人クラスにおける社会の試験（100 点満点）の得点分布を表すものである。以下の各問いに答えよ。
                     <img class="photo1" src="箱ひげ図.png" alt="箱ひげ図">
 
@@ -470,6 +483,7 @@
                 </div>
 
                 <div class="container" id="container14">
+                    <br>
                     <input type="checkbox" onclick="grayOutContainer('container14')">一般に、大きな値の外れ値が存在すると、平均値が中央値よりも（ ）なる傾向がある。括弧にあてはまる適切な語を「大きく」または「小さく」で答えよ。
                     <p><span id="test"><input type="checkbox" id="blank36"><label for="blank36">　大きく　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation26')">解説を見る</button>
