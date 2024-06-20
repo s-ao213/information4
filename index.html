@@ -92,14 +92,14 @@
                 <div class="container" id="container0">
                     <input type="checkbox" onclick="grayOutContainer('container0')"> 次のデータは、名義尺度／順序尺度／間隔尺度／比例尺度のどれに分類するのが最も適切か答えよ。
                     <p>① 顧客満足度（非常に不満、不満、普通、満足、非常に満足）</p>
-                    <p>② 最終学歴（高校、高専・短大・専門学校、大学、大学院（修士）、大学院（博士））</p>
-                    <p>③ 国籍（日本、英国、米国、カナダ、フランス、ドイツ、イタリア・・・）</p>
-                    <p>④ 時刻 </p>
-                    <p>⑤ 年収 </p>
                     <p>①<span id="test"><input type="checkbox" id="blank0"><label for="blank0">　順序尺度　</label></span></p>
+                    <p>② 最終学歴（高校、高専・短大・専門学校、大学、大学院（修士）、大学院（博士））</p>
                     <p>②<span id="test"><input type="checkbox" id="blank1"><label for="blank1">　順序尺度　</label></span></p>
+                    <p>③ 国籍（日本、英国、米国、カナダ、フランス、ドイツ、イタリア・・・）</p>
                     <p>③<span id="test"><input type="checkbox" id="blank2"><label for="blank2">　名義尺度　</label></span></p>
+                    <p>④ 時刻 </p>
                     <p>④<span id="test"><input type="checkbox" id="blank3"><label for="blank3">　間隔尺度　</label></span></p>
+                    <p>⑤ 年収 </p>
                     <p>⑤<span id="test"><input type="checkbox" id="blank4"><label for="blank4">　比例尺度　</label></span></p>
                     
                     <button onclick="toggleExplanation(event, 'explanation0')">解説を見る</button>
@@ -151,7 +151,7 @@
                     <br>
                 </div>
 
-                <div class="container" id="container5">n個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                <div class="container" id="container5">\(n\) 個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について算術平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
                     <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　\(\frac{1}{n} \sum_{i=1}^{n} x_i\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation3')">解説を見る</button>
                     <div class="explanation" id="explanation3">
@@ -180,31 +180,111 @@
                 <div class="container" id="container6">
                     <input type="checkbox" onclick="grayOutContainer('container6')">次の各分析について、常に正しいと言えるものは「〇」、常に正しいとは言えないものについては「×」を答えよ。
                     <p>分析①：40 名のクラスで試験を実施したところ、平均点が 49 点であった。いま、点数区分を「0 から19 点」「20 から 39 点」「40 から 59 点」「60 から 79 点」「80 から 100 点」に区切るとすれば、「40 から 59 点」に属する学生が最も多い。</p>
-                    <p>分析②：40 名のクラスで試験が実施され、自分の成績は 65 点、クラスの平均点は 62 点であった。よって、自分は（成績順位において）上位半分に含まれるといえる。×</p>
-                    <p>分析③：情報 3 の中間試験の成績が 65 点（クラス平均 50 点）であった。その後、情報 3 の前期末試験の成績が 75 点（クラス平均 40 点）であった。これより、情報 3 の成績順位は、中間試験のときよりも、前期末試験のほうが向上しているはずだ。</p>
-                    <p>分析④：中学 1 年生の学年末の 9 科目平均が 79 点であった。そして、2 年生の学年末の 9 科目平均は 86点であった。これより、少なくとも 1 年次よりも 2 年次のほうが学年順位があがっているはずだ。</p>
-                    <p>分析⑤：A 君の 9 科目平均は 65 点であった。また、B 君の 9 科目平均は 70 点であった。これより、B君は、A 君よりも点数が高かった科目数が多いはずだ。</p>
-                    <p>分析⑥：40 名のクラスで試験を実施したところ、平均が 62 点であった。クラス全員の試験点数を合計すると 2480 点となるはずだ。</p>
-                    <p>分析⑦：10 人の高血圧患者に対して、血圧を下げる新薬 X を投与したところ、10 名についての最高血圧を平均した値が 181 から 182 になった。これより、新薬 X には最高血圧を下げる効果は期待できないといえる。</p>
-                    <p>分析⑧：高専 3 年生の成績はクラス 2 位であった。また、高専 4 年生の成績はクラス 3 位であった。よって、3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性はない。（3 年と 4 年でクラスのメンバーは同じものとする）×</p>
                     <p>分析①<span id="test"><input type="checkbox" id="blank10"><label for="blank10">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation12')">解説を見る</button>
+                    <div class="explanation" id="explanation12">
+                        <p>分析①：×（常に正しいとは言えない）。\(20\) 名が \(0\) 点、\(19\) 名が \(100\) 点。\(1\) 名が \(60\) 点であれば、合計は
+                        <p>\( 20 \times 0 + 19 \times 100 + 1 \times 60 = 1960 \) 点</p>
+                        <p>平均点は \( \frac{1960}{40} = 49 \) 点。「\(0\) から \(19\) 点」の学生が一番多い。</p>
+                    </div>
+                    <br>
+
+                    <p>分析②：40 名のクラスで試験が実施され、自分の成績は 65 点、クラスの平均点は 62 点であった。よって、自分は（成績順位において）上位半分に含まれるといえる。×</p>
                     <p>分析②<span id="test"><input type="checkbox" id="blank19"><label for="blank19">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation13')">解説を見る</button>
+                    <div class="explanation" id="explanation13">
+                        <p>分析②：×（常に正しいとは言えない）。中央値以上の成績であれば上位半分に含まれるが、平均値以上であっても上位半分に含まれるとは限らない。</p>
+                    </div>
+                    <br>
+
+                    <p>分析③：情報 3 の中間試験の成績が 65 点（クラス平均 50 点）であった。その後、情報 3 の前期末試験の成績が 75 点（クラス平均 40 点）であった。これより、情報 3 の成績順位は、中間試験のときよりも、前期末試験のほうが向上しているはずだ。</p>
                     <p>分析③<span id="test"><input type="checkbox" id="blank20"><label for="blank20">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation14')">解説を見る</button>
+                    <div class="explanation" id="explanation14">
+                        <p>分析③：×（常に正しいとは言えない）。\(40\) 名中 \(30\) 名が \(80\) 点、\(6\) 名が \(2\) 点、\(3\) 名が \(1\) 点、自分が \(65\) 点で平均は</p>
+                        <p> \( \frac{30 \times 80 + 6 \times 2 + 3 \times 1 + 65}{40} = 60.2 \) 点</p>
+                        <p>の場合、クラス上位半分には含まれない。</p>
+                    </div>
+                    <br>
+
+                    <p>分析④：中学 1 年生の学年末の 9 科目平均が 79 点であった。そして、2 年生の学年末の 9 科目平均は 86点であった。これより、少なくとも 1 年次よりも 2 年次のほうが学年順位があがっているはずだ。</p>
                     <p>分析④<span id="test"><input type="checkbox" id="blank21"><label for="blank21">　×　</label></span></p>
+                    <br>
+
+                    <p>分析⑤：A 君の 9 科目平均は 65 点であった。また、B 君の 9 科目平均は 70 点であった。これより、B君は、A 君よりも点数が高かった科目数が多いはずだ。</p>
                     <p>分析⑤<span id="test"><input type="checkbox" id="blank22"><label for="blank22">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation16')">解説を見る</button>
+                    <div class="explanation" id="explanation16">
+                        <br>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <td>国語</td>
+                                <td>数学</td>
+                                <td>理科</td>
+                                <td>社会</td>
+                                <td>英語</td>
+                                <td>保健体育</td>
+                                <td>音楽</td>
+                                <td>美術</td>
+                                <td>技術家庭</td>
+                                <td>平均</td>
+                            </tr>
+                            <tr>
+                                <td>A君</td>
+                                <td><u>65</u></td>
+                                <td><u>65</u></td>
+                                <td><u>65</u></td>                                <td>65</td>
+                                <td><u>65</u></td>                                <td>65</td>
+                                <td><u>65</u></td>                                <td>65</td>
+                                <td>65</td>
+                                <td>65</td>
+                            </tr>
+                            <tr>
+                                <td>B君</td>
+                                <td>60</td>
+                                <td>60</td>
+                                <td>60</td>
+                                <td>60</td>
+                                <td>60</td>
+                                <td><u>90</u></td>
+                                <td><u>95</u></td>
+                                <td><u>95</u></td>
+                                <td><u>95</u></td>
+                                <td>75</td>
+                            </tr>
+                        </table>
+                        <br>
+                    </div>
+                    <br>
+
+                    <p>分析⑥：40 名のクラスで試験を実施したところ、平均が 62 点であった。クラス全員の試験点数を合計すると 2480 点となるはずだ。</p>
                     <p>分析⑥<span id="test"><input type="checkbox" id="blank23"><label for="blank23">　○　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation17')">解説を見る</button>
+                    <div class="explanation" id="explanation17">
+                        <p></p>
+                    </div>
+                    <br>
+
+                    <p>分析⑦：10 人の高血圧患者に対して、血圧を下げる新薬 X を投与したところ、10 名についての最高血圧を平均した値が 181 から 182 になった。これより、新薬 X には最高血圧を下げる効果は期待できないといえる。</p>
                     <p>分析⑦<span id="test"><input type="checkbox" id="blank24"><label for="blank24">　×　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation15')">解説を見る</button>
+                    <div class="explanation" id="explanation15">
+                        <p></p>
+                    </div>
+                    <br>
+
+                    <p>分析⑧：高専 3 年生の成績はクラス 2 位であった。また、高専 4 年生の成績はクラス 3 位であった。よって、3 年と 4 年の両方の成績を総合した順位では 1 位になる可能性はない。（3 年と 4 年でクラスのメンバーは同じものとする）×</p>
                     <p>分析⑧<span id="test"><input type="checkbox" id="blank25"><label for="blank25">　×　</label></span></p>
-                    
                     <button onclick="toggleExplanation(event, 'explanation4')">解説を見る</button>
                     <div class="explanation" id="explanation4">
-                        <p></p>
+                        
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container7">
-                    <input type="checkbox" onclick="grayOutContainer(Container7)">n個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について調和平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
+                    <input type="checkbox" onclick="grayOutContainer(Container7)">20個の整数データ（\(x_1\)，\(x_2\)，…\(x_n\)）について調和平均を求める式をこたえよ。ただし，シグマ記号（総和記号）を使用して記述すること。
                     <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　\( \frac{n}{\sum_{i=1}^{n} \frac{1}{x_i}} \)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation5')">解説を見る</button>
                     <div class="explanation" id="explanation5">
@@ -229,92 +309,96 @@
                     </div>
                     <br>
                 </div>
-                
-                        <p></p>
-                    </div>
-                    <br>
-                </div>
 
                 <div class="container" id="container8">
-                    <input type="checkbox" onclick="grayOutContainer('container8')">
+                    <input type="checkbox" onclick="grayOutContainer('container8')">A 君は平日に新聞配達のバイトをしている。担当の配達先は 100 件となっている。今週の月曜は 50 部/時間、火曜は 55 部/時間、水曜は 60 部/時間、木曜は 30 部/時間（大雨だった）、金曜は 45 部/時間で配達ができた。5 日間での平均配達速度（部/時間）を求めるための式を答えよ。
                     <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <button onclick="toggleExplanation(event, 'explanation6')">解説を見る</button>
+                    <div class="explanation" id="explanation6">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container9">
-                    <input type="checkbox" onclick="grayOutContainer('container9')">
-                    <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <input type="checkbox" onclick="grayOutContainer('container9')">公大製作所の人事部長は、会社説明会で就活生に向けて次のような話をした。2020 年から2022 年にかけての公大製作所の「平均売上成長率」を幾何平均によって求めよ 。
+                    <p>我が公大製作所は、新型コロナウイルスの影響で 2020 年度には売上が前年比 40%になるという非常に大きな危機に直面しました。しかし、社員一同の懸命な努力の結果、2021 年度の売上は前年比 110%、そして 2022 年度には前年比 200%という飛躍的な回復と成長を遂げました。厳しい時期ではありましたが、平均してみれば (40 + 110 + 200) / 3 ≒ 116、つまり、年間平均 16%ずつの売上成長が見られました。この結果は、まさに「困難を乗り越えて強くなる」という言葉通りです。</p>
+                    <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　-4.2% 　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation7')">解説を見る</button>
+                    <div class="explanation" id="explanation7">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container10">
-                    <input type="checkbox" onclick="grayOutContainer('container10')">
-                    <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <input type="checkbox" onclick="grayOutContainer('container10')">先に示した 40 人クラスの「国語」の得点分布を示した箱ひげ図について、次の各問いに答えよ。なお、小テストや試験で出題する際には、図内に Min、Max、Q1、Q2、Q3 の表記はしていないので注意すること。
+                    <p>(1) 席次 1 位、10 位、20 位、30 位、40 位の得点は、およそ何点か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　 (1) 1位：87 点、10 位：約 76 点、20 位：約 67 点、30 位：約 63 点、40 位：46 点　</label></span></p>
+                    <p>(2) この試験において「平均点以上の得点であれば上位 20 位以内に入っている」という解釈は「適切」か「不適切」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　(2) 適切　</label></span></p>
+                    <p>(3) この試験において「約 63～76 の得点範囲に約 10 名の学生が存在している」という解釈は「適切」か「不適切」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank27"><label for="blank27">　(3) 不適切　</label></span></p>
+                    <p>(4) この試験において「平均値＜第 2 四分位数である」は「正しい」か「正しくない」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank28"><label for="blank28">　(4) 正しい　</label></span></p>
+                    <p>(5) この試験において「点数が 72 点の学生は、上位 11 位から 20 位の範囲に位置する」は「正しい」か「正しくない」か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank29"><label for="blank29">　(5) 正しい　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation8')">解説を見る</button>
+                    <div class="explanation" id="explanation8">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container11">
-                    <input type="checkbox" onclick="grayOutContainer('container11')">
+                    <input type="checkbox" onclick="grayOutContainer('container11')">箱ひげ図では（ ① ）を「ひげ」の下限、（ ② ）を「ひげ」の上限として、それに収まらない値を「外れ値」として別途プロットする。括弧にあてはまる式を答えよ。なお、第 1 四分位を Q1、第 2 四分位を Q2、第 3 四分位を Q3 として、Q1～Q3 を使った式で答えること。
                     <p><span id="test"><input type="checkbox" id="blank15"><label for="blank15">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <button onclick="toggleExplanation(event, 'explanation9')">解説を見る</button>
+                    <div class="explanation" id="explanation9">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container12">
-                    <input type="checkbox" onclick="grayOutContainer('container12')">
+                    <input type="checkbox" onclick="grayOutContainer('container12')">箱ひげ図では（ ① ）から（ ② ）の範囲を四分位範囲といい、その範囲にはデータの（ ③ ）%が含まれることになる。括弧にあてはまる語や数値を答えよ。なお、第 1 四分位を Q1、第2 四分位を Q2、第 3 四分位を Q3 として、①と②は Q1、Q2、Q3 のいずれかを答えること。
                     <p><span id="test"><input type="checkbox" id="blank16"><label for="blank16">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <button onclick="toggleExplanation(event, 'explanation10')">解説を見る</button>
+                    <div class="explanation" id="explanation10">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container13">
-                    <input type="checkbox" onclick="grayOutContainer('container13')">
+                    <input type="checkbox" onclick="grayOutContainer('container13')">次に示す箱ひげ図は、40 人クラスにおける社会の試験（100 点満点）の得点分布を表すものである。以下の各問いに答えよ。
+                    <img class="photo1" src="箱ひげ図.png" alt="箱ひげ図">
+                    <p>(1) 最高得点および最低得点は何点か答えよ。</p>
+                    <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　　</label></span></p>
+                    <p>(2) 平均点は何点か答えよ（小数点以下第１位まで答えること）</p>
+                    <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　　</label></span></p>
+                    <p>(3) 中央値は約何点か答えよ（小数点以下第１位まで答えること）。</p>
+                    <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　　</label></span></p>
+                    <p>(4) クラスの上位 10 番以内に位置するためには、およそ何点以上をとっている必要があるか。</p>
+                    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p>
+                    <p>(5) クラスの上位 21 番から 30 番は、およそ何点から何点の点数範囲に属しているか。</p>
                     <p><span id="test"><input type="checkbox" id="blank17"><label for="blank17">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <button onclick="toggleExplanation(event, 'explanation11')">解説を見る</button>
+                    <div class="explanation" id="explanation11">
                         <p></p>
                     </div>
                     <br>
                 </div>
 
                 <div class="container" id="container14">
-                    <input type="checkbox" onclick="grayOutContainer('container14')">
-                    <p><span id="test"><input type="checkbox" id="blank18"><label for="blank18">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
+                    <input type="checkbox" onclick="grayOutContainer('container14')">一般に、大きな値の外れ値が存在すると、平均値が中央値よりも（ ）なる傾向がある。括弧にあてはまる適切な語を「大きく」または「小さく」で答えよ。
+                    <p><span id="test"><input type="checkbox" id="blank33"><label for="blank33">　大きく　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation18')">解説を見る</button>
+                    <div class="explanation" id="explanation18">
                         <p></p>
                     </div>
                     <br>
                 </div>
-
-                <div class="container" id="container15">
-                    <input type="checkbox" onclick="grayOutContainer('container15')">
-                    <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　　</label></span></p>
-                    <button onclick="toggleExplanation(event, 'explanation')">解説を見る</button>
-                    <div class="explanation" id="explanation">
-                        <p></p>
-                    </div>
-                    <br>
-                </div>
-
 
             </section>
             
