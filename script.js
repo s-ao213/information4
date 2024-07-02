@@ -59,8 +59,6 @@ function toggleExplanation(event, explanationId) {
     }
 }
 
-
-
 function resetAll() {
     var containers = document.getElementsByClassName('container');
     for (var i = 0; i < containers.length; i++) {
@@ -78,4 +76,13 @@ function resetAll() {
     for (var i = 0; i < explanations.length; i++) {
         explanations[i].style.display = 'none';
     }
+}
+
+function copyCode() {
+    const code = document.getElementById('python-code').innerText;
+    navigator.clipboard.writeText(code).then(function() {
+        alert('コードがコピーされました!');
+    }, function(err) {
+        alert('コピーに失敗しました: ', err);
+    });
 }
