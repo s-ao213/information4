@@ -82,6 +82,7 @@ tr#tl {
 
 .container {
     margin-bottom: 10px;
+    word-break: break-all; /* 長い文字列を適切な位置で折り返す */
 }
 
 .gray-out {
