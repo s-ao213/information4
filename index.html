@@ -921,6 +921,7 @@
                         <p><b>プロパティ（Property）</b>: 「color」は選択された要素（この場合、すべての&lt;h1&gt;要素）のテキスト色を指定するプロパティです。</p>
                         <p><b>値（Value）</b>: 「#0000ff」は16進カラーコードで、この場合は<b style="color: #0000ff;">青色</b>を表します。</p>
                     </div>
+                </div>
             </section>
             
             <section>
@@ -928,7 +929,45 @@
                     <h2 id="note4">講義ノート第12回</h2>
                     <p><a href="#index">目次に戻る</a></p>
                 </u>
-                <p>作成中</p>
+                
+                <div class="container" id="container51">
+                    <input type="checkbox" onclick="grayOutContainer('container51')">ウェブページに美しく整形された数式を表示するための技術は、どれか。最も適切なものを記号で答えよ。
+                    <p>
+                        ① Wolfalpha 　② Mathematica
+                        <br>
+                        ③ MathJax 　④ LaTeX 
+                        <br>
+                        ⑤ jQuery 　⑥ React
+                    </p>
+                    <p><span id="test"><input type="checkbox" id="blank81"><label for="blank81">　③MathJax　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation48')">解説を見る</button>
+                    <div class="explanation" id="explanation48">
+                        <p><b>① Wolfalpha</b>: Wolfram Alphaは、自然言語でのクエリに対する計算や情報検索を行うオンラインサービスです。ウェブページに数式を表示する技術ではありません。</p>
+                        <p><b>② Mathematica</b>: Mathematicaは、数式処理や計算を行うためのソフトウェアです。ウェブページに数式を表示するための技術ではありません。</p>
+                        <p><b>③ MathJax</b>: MathJaxは、ウェブページに美しく整形された数式を表示するためのJavaScriptライブラリです。TeX、LaTeX、およびMathMLで記述された数式を表示するのに使われます。</p>
+                        <p><b>④ LaTeX</b>: LaTeXは、文書の組版に使われるシステムで、特に科学技術文書で広く使われています。ウェブページ上で直接数式を表示するための技術ではありませんが、MathJaxと組み合わせて使われることがあります。</p>
+                        <p><b>⑤ jQuery</b>: jQueryは、JavaScriptライブラリで、ウェブページの操作やイベント処理を簡単にするためのものです。数式の表示には特化していません。</p>
+                        <p><b>⑥ React</b>: Reactは、ユーザインタフェースを構築するためのJavaScriptライブラリです。数式表示専用の技術ではありませんが、MathJaxと組み合わせて使われることがあります。</p>
+                    </div>
+                    
+                    <br>
+                </div>
+
+                
+                <div class="container" id="container52">
+                    <input type="checkbox" onclick="grayOutContainer('container52')">HTML に関する文脈で CDN とは何の略か。最も適切なものを記号で答えよ。
+                    <p>① Content Distribution Network</p>
+                    <p>② Central Data Network </p>
+                    <p>③ Cool Developer's Network</p>
+                    <p>④ Content Delivery Network</p>
+                    <p>⑤ Chocolate Donut Network</p>
+                    <p><span id="test"><input type="checkbox" id="blank82"><label for="blank82">　④　</label></span></p>
+                    <button onclick="toggleExplanation(event, 'explanation49')">解説を見る</button>
+                    <div class="explanation" id="explanation49">
+                        <p><b>CDN (Content Delivery Network)</b>は、インターネット上でコンテンツを効率的に配信するための分散型サーバーネットワークです。</p>
+                    </div>
+                    <br>
+                </div>
             </section>
             
         <script type="text/javascript" src="script.js"></script>
