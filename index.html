@@ -148,15 +148,15 @@
                     <button onclick="toggleExplanation(event, 'explanation1')">解説を見る</button>
                     <div class="explanation" id="explanation1">
                         <h3>各言葉の意味の説明</h3>
-                        <ul>
-                            <li><strong>中位値:</strong>代表値の一つで、複数のデータを値の大きさの順に並べたとき、中央にくるデータの値のこと。対象となるデータ数が偶数の場合は、中央にある二つ値の平均値となる。</li>
-                            <li>① <strong>平均値:</strong> 全データの合計をデータの個数で割った値。</li>
-                            <li>② <strong>最頻値:</strong> 最も頻繁に出現する値。</li>
-                            <li>③ <strong>中央値:</strong> データを昇順または降順に並べたとき、中央に位置する値。</li>
-                            <li>④ <strong>50 パーセンタイル:</strong> 全データの 50% がこの値以下であることを示す値。</li>
-                            <li>⑤ <strong>第 2 四分位数:</strong> データを 4 等分したときの 2 番目の区切りの値で、中央値と同じです。</li>
-                            <li>⑥ <strong>期待値:</strong> 確率論における平均値で、各値にその確率を掛けた総和。</li>
-                        </ul>
+                        <ol>
+                            <li><strong>中位数:</strong>代表値の一つで、複数のデータを値の大きさの順に並べたとき、中央にくるデータの値のこと。対象となるデータ数が偶数の場合は、中央にある二つ値の平均値となる。</li>
+                            <li><strong>平均値:</strong> 全データの合計をデータの個数で割った値。</li>
+                            <li><strong>最頻値:</strong> 最も頻繁に出現する値。</li>
+                            <li><strong>中央値:</strong> データを昇順または降順に並べたとき、中央に位置する値。</li>
+                            <li><strong>50 パーセンタイル:</strong> 全データの 50% がこの値以下であることを示す値。</li>
+                            <li><strong>第 2 四分位数:</strong> データを 4 等分したときの 2 番目の区切りの値で、中央値と同じです。</li>
+                            <li><strong>期待値:</strong> 確率論における平均値で、各値にその確率を掛けた総和。</li>
+                        </ol>
                     </div>
                     <br>
                 </div>
@@ -172,7 +172,7 @@
                 <div class="container" id="container4">
                     <br>
                     <input type="checkbox" onclick="grayOutContainer('container4')">「平均」を意味する 2 つの英単語を答えよ。
-                    <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average　Mean　</label></span></p>
+                    <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　Average, Mean　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation2')">解説を見る</button>
                     <div class="explanation" id="explanation2">
                         <p>英語で「平均」は Mean と表現されます。Average も同様に「平均」を意味しますが、Average は Mean よりも広義で「中央値」や「最頻値」なども含めた意味で使われることがあります。</p>
@@ -246,6 +246,7 @@
                     <p>分析⑤<span id="test"><input type="checkbox" id="blank22"><label for="blank22">　×　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation16')">解説を見る</button>
                     <div class="explanation" id="explanation16">
+                        <p>反例</p>
                         <img class="photo2" src="分析５解説.png" alt="分析の表">
                     </div>
                     <br>
@@ -446,7 +447,7 @@
                     <input type="checkbox" onclick="grayOutContainer('container12')">箱ひげ図では（ ① ）から（ ② ）の範囲を四分位範囲といい、その範囲にはデータの（ ③ ）%が含まれることになる。括弧にあてはまる語や数値を答えよ。なお、第 1 四分位を Q1、第2 四分位を Q2、第 3 四分位を Q3 として、①と②は Q1、Q2、Q3 のいずれかを答えること。
                     <p>①<span id="test"><input type="checkbox" id="blank16"><label for="blank16">　① \(Q1\)　</label></span></p>
                     <p>②<span id="test"><input type="checkbox" id="blank34"><label for="blank34">　② \(Q3\)　</label></span></p>
-                    <p>③<span id="test"><input type="checkbox" id="blank35"><label for="blank35">　③ 50　</label></span></p>
+                    <p>③<span id="test"><input type="checkbox" id="blank35"><label for="blank35">　③ \(50\)　</label></span></p>
                     <button onclick="toggleExplanation(event, 'explanation10')">解説を見る</button>
                     <div class="explanation" id="explanation10">
                         <p>箱ひげ図における四分位範囲（IQR）は、次のように定義されます。</p>
